@@ -1,0 +1,31 @@
+{
+  "version": "0.0.8",
+  "name": "withstand",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "prepublish": "bun run build"
+  },
+  "keywords": [
+    "typescript",
+    "utilities"
+  ],
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "eslint": "^9.14.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.2"
+  }
+}
