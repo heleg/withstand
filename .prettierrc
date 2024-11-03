@@ -1,0 +1,10 @@
+{
+  "overrides": [
+    {
+      "files": ["./eslint.config.js"],
+      "options": {
+        "quoteProps": "consistent"
+      }
+    }
+  ]
+}
