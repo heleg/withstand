@@ -1,5 +1,12 @@
 export const typedKeys: <T extends object>(obj: T) => (keyof T)[] = Object.keys;
 
+export const typedValues: <T extends object>(obj: T) => T[keyof T][] =
+  Object.values;
+
+export const typedEntries: <T extends object>(
+  obj: T,
+) => [keyof T, T[keyof T]][] = Object.entries;
+
 export const fromLength = (len: number) =>
   Array.from({ length: len }, (_, i) => i);
 
@@ -14,6 +21,7 @@ export const times = <T>(len: number, cb: (i: number) => T): void => {
 
 // Draft by chatGPT
 // TODO: review
+// TODO: test
 function mapValues<T extends Record<string, any>, U>(
   obj: T,
   callback: (value: T[keyof T], key: keyof T) => U,
