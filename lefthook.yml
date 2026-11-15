@@ -1,0 +1,6 @@
+---
+pre-commit:
+  piped: true
+  jobs:
+    - run: bun lint:fix
+    - run: bun fmt

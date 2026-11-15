@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "types": ["bun"]
+  },
+  "include": ["src", "tsdown.config.ts"]
+}
